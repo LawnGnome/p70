@@ -1,0 +1,82 @@
+body {
+	background-color: black;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-image: url(../images/background.png);
+	background-position: 110% 110%;
+
+	color: #bbb;
+	font-family: Georgia, Serif;
+
+	margin: 0.4em 4em;
+	padding: 0;
+}
+
+h1 {
+	margin: 0 0 1em 0;
+	padding: 0;
+	font-family: Calibri, Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 2em;
+	font-weight: bold;
+	color: #ddd;
+	border-bottom: solid 1px #888;
+}
+
+.content {
+	background: rgb(192, 192, 192);
+	background: rgba(192, 192, 192, 0.8);
+	color: #222;
+
+	-moz-border-radius: 0.7em;
+	-webkit-border-radius: 0.7em;
+	border-radius: 0.7em;
+
+	margin: 0;
+	padding: 1em;
+}
+
+.content ul {
+	margin: 0 0 1em 1em;
+	padding: 0;
+}
+
+.content li {
+	list-style: none;
+	margin: 0 0 1em 1em;
+	padding: 0;
+}
+
+.content li:before {
+	display: block;
+	float: left;
+	width: 1em;
+	content: "⇀";
+	opacity: 0.5;
+	margin-left: -1.5em;
+}
+
+#blurb {
+	position: absolute;
+	right: 4em;
+	width: 25%;
+}
+
+#form-result {
+	position: absolute;
+	left: 4em;
+	right: 25%;
+	margin-right: 8em;
+}
+
+#form-result form input {
+	font-family: Calibri, Verdana, Helvetica, Arial, Sans-Serif;
+	font-size: 1.35em;
+	font-weight: bold;
+}
+
+#success, #failure {
+	display: none;
+	margin-top: 2em;
+}
+
+/* vim: set nocin ai ts=8 sw=8 noet: */
