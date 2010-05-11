@@ -10,7 +10,7 @@ CREATE TABLE "url" (
 	PRIMARY KEY ("id")
 );
 
-CREATE INDEX "url__url" ON "url" ("url");
+CREATE UNIQUE INDEX "url__url" ON "url" ("url");
 
 
 CREATE TABLE "link" (
@@ -21,6 +21,8 @@ CREATE TABLE "link" (
 	PRIMARY KEY ("id"),
 	FOREIGN KEY ("url") REFERENCES "url" ("id")
 );
+
+CREATE UNIQUE INDEX "link__url_type" ON "link" ("url", "type");
 
 
 COMMIT;
