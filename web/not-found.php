@@ -4,7 +4,7 @@ include __DIR__.'/html-header.php';
 ?>
 <h1>Terribly sorry</h1>
 
-<p>
+<p class="content">
 	Your redirect doesn't exist.
 </p>
 <?php

@@ -5,7 +5,7 @@ try {
 	$link = new Link(Base::decode($_GET['id'], 62));
 }
 catch (NotFoundException $e) {
-	include __DIR__.'/redirect-error.php';
+	include __DIR__.'/not-found.php';
 	exit(0);
 }
 
