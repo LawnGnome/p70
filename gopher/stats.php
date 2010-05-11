@@ -1,6 +1,6 @@
 <?php
 try {
-	$link = new Link((int) $request);
+	$link = new Link(Base::decode($request, 62));
 }
 catch (NotFoundException $e) {
 	include __DIR__.'/redirect-error.php';
