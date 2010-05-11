@@ -1,0 +1,11 @@
+<?php
+final class Config {
+	const ADMIN_EMAIL = 'email@address';
+	const ADMIN_NAME = 'Admin Name';
+	const DEBUG = false;
+	const DSN = 'pgsql:host=localhost dbname=dbname user=p70 password=password';
+	const ERROR_LOG = './error.log';
+	const HOST = 'host.name';
+}
+
+// vim: set cin ai ts=8 sw=8 noet:
