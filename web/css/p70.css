@@ -9,17 +9,21 @@ body {
 	font-family: Georgia, Serif;
 
 	margin: 0.4em 4em;
-	padding: 0;
+	padding: 0 0 4em 0;
 }
 
 h1 {
 	margin: 0 0 1em 0;
-	padding: 0;
+	padding: 0 0 0 0.5em;
 	font-family: Calibri, Verdana, Helvetica, Arial, Sans-Serif;
 	font-size: 2em;
 	font-weight: bold;
 	color: #ddd;
-	border-bottom: solid 1px #888;
+	border-bottom: solid 1px #333;
+}
+
+a {
+	color: #aaf;
 }
 
 .content {
@@ -33,6 +37,10 @@ h1 {
 
 	margin: 0;
 	padding: 1em;
+}
+
+.content a {
+	color: #338;
 }
 
 .content ul {
@@ -77,6 +85,36 @@ h1 {
 #success, #failure {
 	display: none;
 	margin-top: 2em;
+}
+
+#footer {
+	position: absolute;
+	bottom: 1em;
+	left: 4em;
+	right: 4em;
+	text-align: right;
+	margin: 0;
+	padding: 0 0 0 10em;
+	border-top: solid 1px #333;
+}
+
+#footer li {
+	list-style: none;
+	display: inline;
+	margin: 0 1em 0 0;
+	padding: 0;
+	font-family: Calibri, Verdana, Helvetica, Arial, Sans-Serif;
+	color: #ddd;
+}
+
+#footer li:before {
+	margin-right: 1em;
+	content: "|";
+	color: #333;
+}
+
+#footer li:first-child:before {
+	display: none;
 }
 
 /* vim: set nocin ai ts=8 sw=8 noet: */
